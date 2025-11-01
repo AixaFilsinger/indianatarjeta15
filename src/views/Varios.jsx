@@ -1,4 +1,5 @@
 import brillo from "../assets/star.png";
+import brillo2 from "../assets/brilloD.png"
 import boladisco from "../assets/boladiscoN.png";
 import dressCode from "../assets/dresscodeN.png";
 import Notamusical from "../assets/disco.png";
@@ -206,10 +207,10 @@ const Varios = () => {
       </article>
 
       <article className=" fin d-flex flex-column justify-content-center align-items-center position-relative">
-        <img src={brillo} alt="" className="brillo brillo-top1" />
+        <img src={brillo2} alt="" className="brillo1 brillo-top1" />
         <h4 data-aos="zoom-in-down">¡No podes faltar!</h4>
         <h2 data-aos="zoom-in-down">Indiana</h2>
-        <img src={brillo} alt="" className="brillo brillo-bottom1" />
+        <img src={brillo2} alt="" className="brillo1 brillo-bottom1" />
       </article>
     </section>
   );

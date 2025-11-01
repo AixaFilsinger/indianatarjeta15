@@ -170,7 +170,46 @@ small{
    font-family: 'Times New Roman', Times, serif;
    color: white;
 }
+/* ------------------------------------------- */
+/* REGLAS PARA APILAMIENTO DE IMAGEN Y TEXTO */
+/* ------------------------------------------- */
 
+/* 1. Contenedor Principal (Marco de Referencia) */
+.contenedor-pila {
+    position: relative; 
+    /* Importante: El alto debe ser 'auto' para que se ajuste al contenido interno (la imagen). */
+    height: auto; 
+}
+
+/* 2. Capa de la Imagen (Detrás: z-index: 1) */
+.capa-imagen {
+    position: relative; /* Lo mantenemos en el flujo para que defina el alto del padre */
+    z-index: 1; /* Detrás */
+    width: 100%;
+}
+
+/* 3. La Imagen (¡AQUÍ ESTÁ LA SOLUCIÓN DEL CORTE!) */
+.capa-imagen img {
+    width: 100%; /* La imagen es 100% del ancho del padre */
+    height: auto; /* IMPORTANTE: Mantiene la proporción y evita el recorte. */
+    display: block; /* Elimina espacios en blanco no deseados. */
+    object-fit: contain; /* Opcional: Si quieres ser redundante de que no se corte, pero height: auto ya lo logra */
+}
+
+
+/* 4. Capa del Contador (Encima: z-index: 2) */
+.capa-contenido {
+    /* Aquí usamos 'absolute' para que se superponga, pero se posicione sobre el padre */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Se estira para cubrir el alto definido por la imagen */
+    z-index: 2; /* Adelante */
+
+    /* Tus clases de Bootstrap (d-flex, justify-content-center, align-items-center) 
+       se encargarán de centrar el contenido perfectamente sobre la imagen. */
+}
 .repro {
   text-align: center;
 }
@@ -199,7 +238,7 @@ small{
 }
 .varios{
   background-color: #ffffff;
-  width: 90%;
+  width: 80%;
   height: 90%;
 
 }
@@ -262,7 +301,7 @@ small{
 .fin {
   height: 100vh;
   position: relative;
-  background: url(./assets/fondo1.png);
+  background: url(./assets/fondofin.png);
   background-size: cover;
   background-position: center;
   overflow: hidden; /* para que el overlay no se escape */
@@ -308,6 +347,12 @@ small{
   opacity: 0.8;
   animation: float 3s ease-in-out infinite;
 }
+.brillo1 {
+  position: absolute;
+  width: 100px;  /* ajusta según quieras */
+  opacity: 0.8;
+  animation: float 3s ease-in-out infinite;
+}
 
 /* Ubicación del brillo */
 .brillo-top {
@@ -321,13 +366,17 @@ small{
   animation-delay: 1.5s; /* para que no se muevan al mismo tiempo */
 }
 .brillo-top1 {
-  top: 30px;
+  top: 20px;
   left: -100px;
+  filter: drop-shadow(0 0 10px gold)
+            drop-shadow(0 0 20px #FFD700);
 }
 
 .brillo-bottom1 {
-  bottom: 30px;
+  bottom: 10px;
   right: -100px;
+  filter: drop-shadow(0 0 10px gold)
+            drop-shadow(0 0 20px #FFD700);
   animation-delay: 1.5s; /* para que no se muevan al mismo tiempo */
 }
 

@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-import adorno1 from "../assets/adorno1.png"
-import adorno2 from "../assets/adorno2.png"
-import adorno3 from "../assets/adorno3.png"
-import adorno4 from "../assets/adorno4.png"
+
+import cuadro from "../assets/CuadroD.png"
 const CuentaRegresiva = () => {
   const targetDate = new Date("2025-11-08T21:30:00").getTime(); // FECHA DEL EVENTO
 
@@ -47,13 +45,12 @@ const CuentaRegresiva = () => {
     return () => clearInterval(timer);
   }, [targetDate]);
   return (
-    <section className="mb-5">
-     <aside className="d-flex justify-content-around">
-      <img src={adorno1} alt="" width={170} />
-      <img src={adorno2} alt="" width={170}/>
+    <section className="mb-5 contenedor-pila">
+     <aside className="cuadroCuentaR capa-imagen">
+      <img src={cuadro} alt="cuadro dorado" />
      </aside>
 
-      <section className="cuentaRe d-flex flex-column justify-content-center align-items-center text-center pe-3">
+      <section className="cuentaRe capa-contenido d-flex flex-column justify-content-center align-items-center text-center pe-3">
         <h2 className="h2-cuentaRe ">¡Tan solo faltan!</h2>
         <aside className="px-2 pb-2">
           <div className="d-flex flex-column align-items-center justify-content-center contador">
@@ -80,10 +77,7 @@ const CuentaRegresiva = () => {
         </aside>
         <h3 className="mt-3">Para este día tan especial</h3>
       </section>
-      <aside className="d-flex justify-content-around">
-      <img src={adorno3} alt="" width={170} />
-      <img src={adorno4} alt="" width={170}/>
-     </aside>
+    
     </section>
   );
 };
