@@ -45,6 +45,7 @@ body{
 
 .portada{
   margin-top: 7rem;
+  padding: 1rem;
 }
 
 .portada h1{
@@ -286,13 +287,15 @@ small{
 }
 .fin h4{
  font-family: "Nefelibata", cursive;
- color: rgb(212, 175, 55);
+ /*color: rgb(212, 175, 55);*/
+ color: white;
  font-size: 40px;
  margin-bottom: 80px;
 }
 .fin h2{
   font-family: 'Amoresa', cursive;
-  color: rgb(212, 175, 55);
+  /*color: rgb(212, 175, 55);*/
+  color: white;
   font-weight: 300;
   font-size: 60px;
   margin: 0;
