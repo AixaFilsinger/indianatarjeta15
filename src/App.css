@@ -349,7 +349,7 @@ small{
 }
 .brillo1 {
   position: absolute;
-  width: 100px;  /* ajusta según quieras */
+  width: 60px;  /* ajusta según quieras */
   opacity: 0.8;
   animation: float 3s ease-in-out infinite;
 }

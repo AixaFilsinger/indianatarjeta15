@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import cuadro from "../assets/CuadroD.png"
 const CuentaRegresiva = () => {
-  const targetDate = new Date("2025-11-08T21:30:00").getTime(); // FECHA DEL EVENTO
+  const targetDate = new Date("2025-11-28T22:00:00").getTime(); // FECHA DEL EVENTO
 
   const [timeLeft, setTimeLeft] = useState({
     days: "00",
