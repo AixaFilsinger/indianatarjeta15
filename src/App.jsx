@@ -5,19 +5,22 @@ import Portada from './views/Portada'
 import Frase from './views/Frase'
 import CuentaRegresiva from './views/CuentaRegresiva'
 import Varios from "./views/Varios"
+import Carrusel from './views/Carrusel'
 
 function App() {
   
 
   return (
     <>
-       <aside className='fondo1 mb-5'>
+       <aside className='fondo1  d-flex flex-column justify-content-center align-items-center'>
+        <Portada></Portada>
          <ReproductorMusic></ReproductorMusic>
-      <Portada></Portada>
+      
        </aside>
-       <aside className='fondoc mt-5'>
+       <aside className='fondoc'>
         <Frase></Frase>
       <CuentaRegresiva></CuentaRegresiva>
+      <Carrusel></Carrusel>
        </aside>
        <Varios></Varios>
 

@@ -1,10 +1,12 @@
 import quince from "../assets/15.png";
-import princesa from "../assets/chica.png";
-import castillo from "../assets/castillo2.png";
+import luna from "../assets/Luna.png";
+
 
 const Portada = () => {
   return (
-    <section className="d-flex flex-column align-items-center  portada">
+    <section className="d-flex flex-column justify-content-center align-items-center portada">
+      {/* 👑 Imagen de la corona */}
+      <img src={luna} alt="luna" width={120} className="mb-5 mt-5" />
       <aside className="linea">
         <h2 className="enfoque mis">
           {"mis".split("").map((letra, i) => (
@@ -30,8 +32,7 @@ const Portada = () => {
           </span>
         ))}
       </h1>
-      <img src={castillo} alt="" className="decor decor-izq" width={400} />
-      <img src={princesa} alt="" className="decor decor-der"/>
+      
     </section>
   );
 };

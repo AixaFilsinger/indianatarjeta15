@@ -1,7 +1,7 @@
 import brillo from "../assets/star.png";
 import boladisco from "../assets/boladiscoN.png";
 import dressCode from "../assets/dresscodeN.png";
-import Notamusical from "../assets/discorosa.png";
+import Notamusical from "../assets/disco.png";
 import copas from "../assets/copasN.png";
 import asistencia from "../assets/invitacionN.png";
 import regalo from "../assets/regaloN.png";
@@ -32,8 +32,8 @@ const Varios = () => {
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
               >
-                8 de Noviembre <br />
-                21:30hs
+                28 de Noviembre <br />
+                22hs
               </p>
             </aside>
             <aside className="col-xs-12 text-center donde mb-4 position-relative">
@@ -51,15 +51,13 @@ const Varios = () => {
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
               >
-                Salón Heleh
-                <br />
-                San Andrés.
+                Salón Keké
               </p>
               <button
                 className="btn-varios mt-3 mb-5"
                 onClick={() =>
                   window.open(
-                    "https://maps.app.goo.gl/wdiW8cDNYU9b23Sb7"
+                    "https://maps.app.goo.gl/18iJ7ZZguArfbppi8"
                   )
                 }
               >
@@ -82,11 +80,12 @@ const Varios = () => {
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
               >
-                Elegante
-                <br /> Evitar el color rosa
+                Gala
+                <br /> Evitar el color dorado y blanco
               </p>
               <div className="color-palette">
-                <div className="color-circle verde" title="Verde"></div>
+                <div className="color-circle verde me-1" title="Dorado"></div>
+                <div className="color-circle blanco" title="Blanco"></div>
               </div>
             </aside>
             <aside className="col-xs-12 text-center playlist mb-4">
@@ -110,7 +109,7 @@ const Varios = () => {
                 className="btn-varios mt-3 mb-5"
                 onClick={() =>
                   window.open(
-                    "https://open.spotify.com/playlist/2gUuOFCXoBFirMlfyc2NkG?si=gxKsaMAFRkaaGOVbLOrTdw&pt=ae8af048bf3ba0d88fa10d1059d1c000"
+                    "https://open.spotify.com/playlist/7An0Z4F6SmwtrCczz5kHtJ?si=BvtmEeoySRGJ-sDLIm9QUQ"
                   )
                 }
               >
@@ -128,10 +127,10 @@ const Varios = () => {
                 Soñé con este día y me gustaría vivirlo con quienes más
                 quiero...
               </p>
-              <p>Confirma hasta el 29 de octubre</p>
+              <p>Confirma hasta el 15 de noviembre</p>
               <button
                 className="btn-varios mt-3 mb-2"
-                onClick={() => window.open("https://wa.link/d4ye0i")}
+                onClick={() => window.open("https://wa.link/xfizfn")}
               >
                 Confirmar asistencia.
               </button>
@@ -165,12 +164,12 @@ const Varios = () => {
 
                   {/* Los <p> ahora sí se ven */}
                   <p className="mb-1">
-                    <strong>Alias:</strong> mailen.salazar09
+                    <strong>Alias:</strong> indiana.anastacio
                   </p>
                   <p className="mb-3">
                     <strong>A nombre de:</strong>
                     <br />
-                    Mailen Salazar
+                    Indiana Anastacio
                   </p>
 
                   <button

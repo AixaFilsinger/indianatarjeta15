@@ -1,5 +1,5 @@
 
-import corona from "../assets/corona.png";
+
 import { useState, useRef } from "react";
 
 const ReproductorMusic = () => {
@@ -17,8 +17,7 @@ const ReproductorMusic = () => {
 
   return (
     <section className="d-flex flex-column justify-content-center align-items-center repro">
-      {/* 👑 Imagen de la corona */}
-      <img src={corona} alt="Corona" width={120} className="mb-3" />
+      
 
       {/* 🎵 Botón de Play / Pause */}
       <button className="btn-music" onClick={togglePlay}>
@@ -30,7 +29,7 @@ const ReproductorMusic = () => {
       </button>
 
       {/* 🎧 Audio */}
-      <audio ref={audioRef} src="/music/only.mp3" preload="auto"></audio>
+      <audio ref={audioRef} src="/music/tini.mp3" preload="auto"></audio>
     </section>
   );
 };

@@ -11,13 +11,14 @@ body, html, #root {
   height: 100%;
 }
 
+
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 body{
- background-color: #FFFEF7;
+ background-color: black;
   
 }
 
@@ -32,23 +33,25 @@ body{
   font-style: normal;
 }
 .fondo1{
-  background: url(./assets/Fondop.png) no-repeat;
+  background: url(./assets/fondo1.png) no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 100vh; 
 }
 .fondoc{
-   background: url(./assets/Fondoc.png) no-repeat;
+   background: url(./assets/fondo1.png) no-repeat;
   background-size: cover;
 }
 
-
+.portada{
+  margin-top: 7rem;
+}
 
 .portada h1{
   font-family: 'Amoresa', cursive;
   font-size: 6rem;
-  color: black;
-  margin-bottom: 18rem;
+  color: white;
+  margin-bottom: 1rem;
   position: relative;
   z-index: 2;
 }
@@ -56,6 +59,7 @@ body{
   position: relative;
   display: inline-block; /* para que el contenedor se ajuste al contenido */
   margin-bottom: 2.5rem;
+  margin-top: 3rem;
   z-index: 2;
 }
 
@@ -67,7 +71,7 @@ body{
 .linea h2 {
   font-size: 3rem;
   position: absolute;
-  color: black; /* o el color que necesites */
+  color: white; /* o el color que necesites */
   font-family: 'Amoresa', cursive; /* o la fuente que uses */
   margin: 0;
   padding: 0;
@@ -82,11 +86,7 @@ body{
   right: -65px;
 }
 
-.portada {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-}
+
 
 /* Imágenes laterales decorativas */
 .decor {
@@ -124,7 +124,7 @@ body{
 
 
 .repro{
-  margin-top: 5.5rem;
+  margin-top: 1rem;
   height: 18rem;
   
 }
@@ -135,6 +135,7 @@ body{
 .frase p{
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem;
+  color: white;
   
 }
 
@@ -142,29 +143,31 @@ body{
   
   width: 100%;
   text-align: center;
-  color: black;
+  color: white;
  
 }
 .cuentaRe h2 {
   font-family: "Amoresa", cursive;
   font-size: 2.5rem;
-  color: rgb(30, 30, 30);
+  color: white;
   /*text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 20px #000, 0 0 40px #000,
     0 0 80px #000;*/
 }
 .cuentaRe  h3{
   font-family: 'Amoresa', cursive;
   font-size: 1.5rem;
-  
+  color: white;
 }
 
 .contador h3 {
    font-family: "Riwaya", cursive;
   margin-bottom: 0; /* elimina espacio innecesario debajo del número */
   font-size: 3.5rem; /* opcional: agranda números */
+  color: w;
 }
 small{
-   font-family: 'Times New Roman', Times, serif
+   font-family: 'Times New Roman', Times, serif;
+   color: white;
 }
 
 .repro {
@@ -189,7 +192,7 @@ small{
 }
 
 .varios0{
-  background: url(./assets/fondogliter.png) no-repeat;
+  background: url(./assets/Fondo2.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -213,8 +216,8 @@ small{
   margin:20px 30px;
 }
 .btn-varios2 {
-  background: #FFD7D6;
-  color: black;
+  background: black;
+  color: white;
   border: 2px solid gold;
   border-radius: 50px;
   padding: 12px 30px;
@@ -228,9 +231,9 @@ small{
 
 .btn-varios {
    font-family: 'Cormorant Garamond', serif;
-  background: #FFD7D6;
+  background: #D4AF37;
   color: black;
-  border: 2px solid gold;
+  border: 2px solid #D4AF37;
   border-radius: 50px;
   padding: 12px 30px;
   font-size: 1.1rem;
@@ -242,8 +245,9 @@ small{
 }
 
 .btn-varios:hover {
-  background: gold;
+  background: #c0a030;
   color: black; /* texto vino */
+  border-color: #c0a030;
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
@@ -257,7 +261,7 @@ small{
 .fin {
   height: 100vh;
   position: relative;
-  background: url(./assets/fin2.png);
+  background: url(./assets/fondo1.png);
   background-size: cover;
   background-position: center;
   overflow: hidden; /* para que el overlay no se escape */
@@ -351,7 +355,10 @@ small{
 
 /* 🔹 Colores específicos */
 .color-circle.verde {
-  background-color: #FACAC8;
+  background-color: #c0a030;
+}
+.color-circle.blanco {
+  background-color: white;
 }
 
 
