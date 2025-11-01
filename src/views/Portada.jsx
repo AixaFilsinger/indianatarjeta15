@@ -24,7 +24,7 @@ const Portada = () => {
       </aside>
 
       <h1 className="enfoque">
-        {"Mailen".split("").map((letra, i) => (
+        {"Indiana".split("").map((letra, i) => (
           <span key={i} style={{ animationDelay: `${i * 0.1}s` }}>
             {letra}
           </span>

@@ -209,7 +209,7 @@ const Varios = () => {
       <article className=" fin d-flex flex-column justify-content-center align-items-center position-relative">
         <img src={brillo} alt="" className="brillo brillo-top1" />
         <h4 data-aos="zoom-in-down">¡No podes faltar!</h4>
-        <h2 data-aos="zoom-in-down">Mailen</h2>
+        <h2 data-aos="zoom-in-down">Indiana</h2>
         <img src={brillo} alt="" className="brillo brillo-bottom1" />
       </article>
     </section>
